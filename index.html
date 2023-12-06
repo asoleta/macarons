@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Macaron Recipe Resizer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!--Start of resizerContainer-->
+        <div id="resizerContainer">
+            <!--Start of innterContainer-->
+            <div class="innerContainer">
+                <h1>Macaron Recipe Resizer</h1>
+
+                <!--Start of ingredients-->
+                <h3>Ingredients:</h3>
+                <div id="ingredients">
+
+                    <div class="quantities">
+                        <p class="grams" id="whites">50</p>
+                        <p>grams egg whites</p>
+                    </div>
+
+                    <div class="quantities">
+                        <p class="grams" id="sugar">45</p>
+                        <p>grams white sugar</p>
+                    </div>
+
+                    <div class="quantities">
+                        <p class="grams" id="powderedSugar">65</p>
+                        <p>grams powdered sugar</p>
+                    </div>
+
+                    <div class="quantities">
+                        <p class="grams" id="almondFlour">65</p>
+                        <p>grams almond flour</p>
+                    </div>
+                </div>
+                <!--End of ingredients-->
+
+                <!--Start of gramsInput-->
+                <div id="gramsInput">
+                    <label for="grams">Enter egg whites (g):</label>
+                    <input type="text" id="grams" name="grams" required size="10"/>
+                </div>
+                <!--End of gramsInput-->
+                <div class="button">
+                    <button class="button-74" onclick="calculate()">Convert</button>
+                </div>
+            </div>
+            <!--End of innerContainer-->
+        </div>
+        <!--End of resizerContainer-->
+
+        <script src="script.js"></script>
+    </body>
+</html>
